@@ -3,6 +3,7 @@
 
 import en from "./en";
 import pt from "./pt_br";
+import zhHans from "./zh_hans";
 
 export type Message = keyof typeof en;
 export type Translation = Partial<Record<Message, string>>;
@@ -12,6 +13,7 @@ export type Messages = Record<Message, string>;
 export const registry = {
   en: { tag: "en", table: en },
   pt: { tag: "pt-BR", table: pt },
+  zhHans: { tag: "zh-Hans", table: zhHans },
 } satisfies Record<string, { tag: string; table: Translation }>;
 export type Language = keyof typeof registry;
 
