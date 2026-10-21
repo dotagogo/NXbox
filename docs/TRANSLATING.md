@@ -1,6 +1,6 @@
 # Translating NXbox
 
-NXbox's console UI and NxbHelper ship in English and Brazilian Portuguese.
+NXbox's console UI and NxbHelper ship in English, Brazilian Portuguese and Simplified Chinese.
 Each language has its own file; you can contribute either surface or both.
 Track translations in [issue #10](https://github.com/NspxMiguel/NXbox/issues/10).
 
