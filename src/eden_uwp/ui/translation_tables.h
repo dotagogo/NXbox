@@ -20,6 +20,9 @@ inline constexpr TranslationEntry kEnglish[] = {
 inline constexpr TranslationEntry kPortuguese[] = {
 #include "eden_uwp/ui/lang/pt_br.inc"
 };
+inline constexpr TranslationEntry kChineseSimplified[] = {
+#include "eden_uwp/ui/lang/zh_hans.inc"
+};
 
 struct LanguageEntry {
     Language language;
