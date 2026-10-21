@@ -1,5 +1,7 @@
 # NxbHelper
 
+[简体中文说明](README.zh-CN.md)
+
 Prepare a USB drive or send locally owned games to an installed NXbox through Device Portal. You can
 also install a separate NXbox UWP app for each game. The app has its own identity, name, tile and
 private saves/keys/content. Once configured, its tile boots directly into the game, without opening
@@ -44,9 +46,9 @@ For **Install a game as its own app**:
 7. After installation/upload completes, set this game's app type to **Game** in Dev Home and open
    its tile. Registration and boot still need validation on an actual Xbox Series console.
 
-Only Portuguese and English are used, selected automatically from the system locale. `LC_ALL`,
+English, Brazilian Portuguese and Simplified Chinese are supported, selected automatically from the system locale. `LC_ALL`,
 `LC_MESSAGES` and `LANG` take precedence over `Intl`; on Windows, `Get-Culture` supplies the locale
-when no environment override is present. `NXBHELPER_LANG=pt` or `en` forces the language for tests.
+when no environment override is present. `NXBHELPER_LANG=pt`, `en` or `zh-Hans` forces the language for tests.
 There is no language selector.
 
 Credentials stay in memory unless you choose to save them. macOS uses Keychain via `security`; Linux
