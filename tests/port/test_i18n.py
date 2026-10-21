@@ -43,7 +43,7 @@ int main() {
     assert(MatchPreferences(std::vector<std::string>{"pt-PT"}, kLanguages) == Language::Portuguese);
     assert(MatchPreferences(std::vector<std::string>{"pt-BR"}, kLanguages) == Language::Portuguese);
     assert(MatchPreferences(std::vector<std::string>{"unknown", "PT_br.UTF-8"}, kLanguages) == Language::Portuguese);
-    assert(MatchPreferences(std::vector<std::string>{"ptx", "es-ES", "zh-Hans-CN"}, kLanguages) == Language::English);
+    assert(MatchPreferences(std::vector<std::string>{"ptx", "es-ES", "zh-Hans-CN"}, kLanguages) == Language::ChineseSimplified);
     assert(!MatchLanguage("", kLanguages));
     const auto spanish = static_cast<Language>(100);
     const auto chinese = static_cast<Language>(101);
